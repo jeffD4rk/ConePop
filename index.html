@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cone-Pop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+
+    <img id="logo" src="Cream_and_Brown_Retro_Streetwear_Logo__1_-removebg-preview.png">
+    <h1>Cone-pop</h1>
+</header>
+
+<body>]
+    <section id="bahh">
+    <div class="container">
+        <div class="thumb">
+            <ul>
+                <li onmouseover="chnageImgSrc('//img.pikbest.com/png-images/20240515/flying-milk-chocolate-png-_10565800.png!sw800')"><img onmouseover="titulo('Chocolate', preco('R$6,00'), peso('130g'))" src="https://img.pikbest.com/png-images/20240515/flying-milk-chocolate-png-_10565800.png!sw800" alt=""></li>
+                <li onmouseover="chnageImgSrc('https://static.wixstatic.com/media/24e98d_10e6ac83c4434d0a8ef8083454860a01~mv2.png/v1/fill/w_498,h_384,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/morango.png')"><img onmouseover="titulo('Morango'), preco('R$7,00')" src="https://static.wixstatic.com/media/24e98d_10e6ac83c4434d0a8ef8083454860a01~mv2.png/v1/fill/w_498,h_384,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/morango.png" alt=""></li>
+                <li onmouseover="chnageImgSrc('https://www.gebon.com.br/image/media/_00200/255/picole-gefrutti-maracuja.png')"><img onmouseover="titulo('Maracujá', preco('R$7,00'), peso('100g'))" src="https://www.gebon.com.br/image/media/_00200/255/picole-gefrutti-maracuja.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="imgBox">
+            <h2 id="titulo">Chocolate</h2>
+            <img src="https://img.pikbest.com/png-images/20240515/flying-milk-chocolate-png-_10565800.png!sw800" alt="" class="cone">
+            <ul class="sizes">
+                <span>Peso</span>
+                <li id="pesos">130g</li>
+                <span></span>
+                <span>Preço</span>
+                <li id="preços">R$6,00</li>
+            </ul>
+            <a target="_blank" href="https://wa.link/j2wl7v" class="btn">Reserve pelo WhatsApp <img id="zap" src="https://portais.univasf.edu.br/programadegestao/imagens/icon-whatsapp.png/@@images/5799978b-ce74-4807-9b1b-18871680e34b.png" width="2px">  </a>
+        </div>
+    </div>
+</section>
+<footer>
+    <div>
+        <h1>
+            todos direitos reservados por Cone-Pop - 2A
+        </h1>
+    </div>
+</footer>
+
+    <script>
+        function chnageImgSrc(src) {
+            document.querySelector('.cone').src = src;
+        }
+        
+        function titulo(title){
+            document.getElementById("titulo").innerHTML = title
+        }
+        function preco($){
+            document.getElementById("preços").innerHTML = $
+        }
+        function peso(gramas){
+            document.getElementById("pesos").innerHTML=gramas
+        }
+    </script>
+    
+</body>
+
+
+
+</html>

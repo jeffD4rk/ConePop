@@ -1,3 +1,9 @@
+
+@font-face {
+    font-family: fontebonita;
+    src: url(GentyDemo-Regular.ttf);
+}
+
 header {
     height: auto;
     display: flex;
@@ -9,10 +15,10 @@ header {
     z-index: 100;
     background-color: rgb(12, 31, 38);
     border-bottom: 2px solid white;
-    font-family: fontebonita;
+    
     padding: 1% 0;
     gap: 1%;
-    color: #f0dfc8;
+    color: #f6f1e3;
     letter-spacing: 3px;
 
     font-size: 25px;
@@ -25,12 +31,58 @@ header {
 }
 
 footer {
-    background-color: rgb(2, 31, 66);
+    background-color:black;
     width: 100%;
     justify-content: center;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     color: white;
+    position: relative;
+    bottom: 0%;
+    height: auto;
+    padding: 2% 0;
+    gap:5px;
+    border: 1px solid grey;
     height: 6em;
+}
+
+#grupo{
+    margin: 5% 0 0% 0;
+    display: flex;
+    justify-content: center;
+    width:100%;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid grey;
+    padding: 5% 0;
+}
+#pessoas{
+    width:120px;
+    height:140px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction:column;
+    margin:2%;
+    border:1px solid grey;
+    border-radius: 10px;
+    overflow: hidden;
+    color:white;
+    gap:5px;
+} #pessoas img{
+    height: 100%;
+    border-radius:50%;
+    width:100%;
+}
+hr{
+    color:grey;
+    background-color: grey;
+}
+
+fiiter h1{
+    font-size: 10px;
+    width:20%;
 }
 
 
@@ -50,7 +102,9 @@ footer {
 }
 
 header h1 {
-    text-shadow: -2px 4px 0px #ff914d;
+    font-family:fontebonita;
+    letter-spacing: 6px;
+    text-shadow: -2px 4px 0px #a38e81;
 
 }
 
@@ -74,8 +128,7 @@ header h1 {
 }
 
 #logo {
-    margin-left: 5%;
-    width: 10%;
+    
 }
 
 table {
@@ -86,10 +139,8 @@ body {
     margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
-
     align-items: center;
-
+    
     background-color: rgb(12, 31, 38);
 }
 
@@ -148,11 +199,6 @@ body {
 hr {
     background-color: white;
     width: 99%;
-}
-
-@font-face {
-    font-family: fontebonita;
-    src: url(GentyDemo-Regular.otf);
 }
 
 
@@ -319,6 +365,14 @@ hr {
 
 
 @media screen and (max-width:767px) {
+    footer{
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size:10px;
+    }
     table {
         width: 100%;
         border-collapse: collapse;
@@ -337,8 +391,7 @@ hr {
         color: white;
     }
 
-    #logo {
-        display: none;
+    #logo{
         width: 20%;
     }
 
@@ -353,7 +406,8 @@ hr {
     header {
         justify-content: center;
         gap: 7%;
-        height: 13vh;
+        height: auto;
+        padding: 2%;
         display: flex;
         align-items: center;
     }
